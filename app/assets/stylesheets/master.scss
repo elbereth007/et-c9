@@ -2,6 +2,8 @@
  * firehose project lesson 7 - file created 15 may 17
  */
 
+// lesson said to delete next line, but uncials are better than Rothenburg Decorative font
+// @import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
 @import "bootstrap";
 
 .clear {
@@ -42,6 +44,8 @@
     color: black;
     font-size: 25px;
     border-bottom: 1px solid #dfdfdf;
+    font-family: 'webfontregular', cursive;
+    font-weight: bold;
 }
 
 header {
@@ -50,4 +54,14 @@ header {
 
 hr {
     clear:both;
+}
+
+h1 {
+    font-family: 'webfontregular', cursive;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'webfontregular', cursive;
 }
