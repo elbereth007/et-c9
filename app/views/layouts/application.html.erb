@@ -39,7 +39,26 @@
     <hr />
     
     <br class="clear" />
+    <!-- next line added 16 may 17 -->
+    <div class="container">
+      <%= yield %>
+    <!-- next 8 lines added 16 may 17 -->
+    </div>
     
-    <%= yield %>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: "next-quote" %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Part of a student project by <a href="https://www.linkedin.com/in/victorchristensen">Victor Christensen</a><br />
+            Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+          </div>
+<!--          <p class="text-muted">Place sticky footer content here.</p>  -->
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

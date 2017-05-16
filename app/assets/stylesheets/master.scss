@@ -1,9 +1,10 @@
 /*
- * firehose project lesson 7 - file created 15 may 17
+ * firehose project lesson 7 - file created/modified 15-16 may 17
  */
 
 // lesson said to delete next line, but uncials are better than Rothenburg Decorative font
-// @import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua');
+
 @import "bootstrap";
 
 .clear {
@@ -42,9 +43,9 @@
 
 .links a {
     color: black;
-    font-size: 25px;
+    font-size: 23px;
     border-bottom: 1px solid #dfdfdf;
-    font-family: 'webfontregular', cursive;
+    font-family: 'Uncial Antiqua', cursive;
     font-weight: bold;
 }
 
@@ -63,5 +64,18 @@ h1 {
 }
 
 h2 {
-    font-family: 'webfontregular', cursive;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+.next-quote {
+    color:#f84342;
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 20px;
+}
+
+.footer-blurb {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 10px;
 }
