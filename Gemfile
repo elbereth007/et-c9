@@ -50,8 +50,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# next 5 lines added 15 may 17
+# next 5 lines added 15-16 may 17
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'simple_form'
 gem 'jquery-rails'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'

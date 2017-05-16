@@ -1,0 +1,10 @@
+<!-- firehose track 2, lesson 12 - file created 16 may 17 -->
+
+<h1>Enter Your Quote Details</h1>
+<br />
+<%= simple_form_for @quote do |f| %>
+    <%= f.input :saying %>
+    <%= f.input :author %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
