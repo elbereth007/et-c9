@@ -5,10 +5,11 @@ class QuotesController < ApplicationController
         @quote = Quote.order("RANDOM()").first
     end
 
-    # next 16 lines added 16 may 17
-    def new
-        @quote = Quote.new
-    end
+# next 16 lines added 16 may 17, then deleted
+#    def new
+#        @quote = Quote.new
+#    end
+
     def create
         @quote = Quote.create(quote_params)
         if @quote.invalid?
