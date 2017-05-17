@@ -26,12 +26,14 @@
         <% end %>
         
       </div>
-      
-      <div class="col-4 slogan">
+<!-- next line modified 17 may 17 -->
+      <div class="col col-sm-4 hidden-xs-down slogan">
         Splurting out unsolicited advice since 2017
       </div>
-      
-      <div class="col-5 links">
+
+<!-- next line added 17 may 17 -->
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
+<!--      <div class="col-5 links">   deleted 17 may 17  -->
 <!--        <%= link_to 'Contribute', new_quote_path %> -->
       <!-- modal lines added 16 may 17 -->
       <!-- Button trigger modal
@@ -39,6 +41,7 @@
           Launch demo modal
         </button>  -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
       
@@ -57,8 +60,9 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Fear is the disease. Hustle is the antidote." %>
+              <br />
+              <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Travis Kalanick" %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -87,10 +91,12 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+<!--          <div class="col-6">  deleted 17 may 17  -->
+          <div class="col-12 col-sm-6">
             <%= link_to "This isn't enough, I need more", root_path, class: "next-quote" %>
           </div>
-          <div class="col-6 footer-blurb">
+<!--          <div class="col-6 footer-blurb">  deleted 17 may 17  -->
+          <div class="col-12 col-sm-6 footer-blurb">
             Part of a student project by <a href="https://www.linkedin.com/in/victorchristensen">Victor Christensen</a><br />
             Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
           </div>
