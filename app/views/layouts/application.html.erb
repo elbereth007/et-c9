@@ -41,8 +41,13 @@
     <hr />
     
     <br class="clear" />
-    <!-- next line added 16 may 17 -->
+    <!-- next 6 lines added 16 may 17 -->
     <div class="container">
+      <% if flash[:error].present? %>
+      <div class="col-10 offset-1 alert alert-danger">
+        <%= flash[:error].html_safe %>
+      </div>
+      <% end %>
       <%= yield %>
     <!-- next 8 lines added 16 may 17 -->
     </div>
