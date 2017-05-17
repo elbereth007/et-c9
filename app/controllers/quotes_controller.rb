@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
         @quote = Quote.order("RANDOM()").first
     end
 
-    # next 11 lines added 16 may 17
+    # next 16 lines added 16 may 17
     def new
         @quote = Quote.new
     end
@@ -15,6 +15,9 @@ class QuotesController < ApplicationController
             flash[:error] = '<strong>Could not save</strong>, the data you entered is invalid.'
         end
         redirect_to root_path
+    end
+    
+    def about
     end
     
     private
