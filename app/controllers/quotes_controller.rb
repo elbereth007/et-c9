@@ -5,7 +5,7 @@ class QuotesController < ApplicationController
         @quote = Quote.order("RANDOM()").first
     end
 
-# next 16 lines added 16 may 17, then deleted
+# next 16 lines added 16 may 17, then these 3 lines deleted
 #    def new
 #        @quote = Quote.new
 #    end
